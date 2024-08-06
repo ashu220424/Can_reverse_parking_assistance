@@ -1,5 +1,5 @@
 # CAN_Reverse_Parking_Sensor
-#implemented by ashutosh sharma
+#implemented by ashu
 Implementation of a Reverse Car Parking Sensor using the HC-SR04 Ultrasonic Sensor Module and the CAN peripherals in the ARM-7 Based LPC2129 Microcontroller Board. <br>
 The ECUs for the CAN Communication used are 2 LPC2129 Boards, 1 connected to a switch which denotes if gear is in Reverse, and another connected to the HC-SR04 module which sends different data for each range of distances. This code is simulated and is working in Keil uVision Version 5.0. Still, to simulate the Transmission and Reception of messages, we need to have a debug script for each transmitter and receiver.<br>
 In this Repository, the files denoted with TX are to be included in the Transmitter Node (the node that has the switch that enables the reverse mode, and also has the buzzer and LEDs to denote distances) and the files with RX are to be included in the Receiver Node (the node which is connected to the Ultrasonic Sensor), and the other files are to be included in both (header,uart0_driver, CAN_Driver, Timer_Code).<br>
